@@ -1,3 +1,4 @@
+
 function initializeSwipers() {
     const width = window.innerWidth;
     console.log(width);
@@ -52,8 +53,9 @@ function initializeSwipers() {
       navigation: {
         nextEl: ".blog-button-next",
         prevEl: ".blog-button-prev",
-      }, initialSlide: 1,
+      }, initialSlide: 0,
     });
+  
   }
   
 
