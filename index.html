@@ -11,7 +11,7 @@
       <title>Warner & Laws</title>
    </head>
    <body>
-      <main class="relative mx-auto">
+      <main class="relative overflow-hidden mx-auto">
          <nav
             class="flex w-full pb-[30px] lg:pb-[45px] items-center border-b-2 border-[#FFFFFF1F] absolute top-[30px] lg:top-[45px] z-10 px-10 justify-between"
             >
@@ -395,7 +395,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide w-full lg:w-[60%]">
                      <div class="partner-card flex-col lg:flex-row">
                         <img src="./assets/lady.png" style="width: 294px;
                            height: 355px;" alt="">
@@ -484,13 +484,12 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="4" viewBox="0 0 100% 4" fill="none">
                <path d="M0 2H1920" stroke="white" stroke-opacity="0.12" stroke-width="3"/>
             </svg>
-            <div class="swiper partnerSwiper">
-               <div class="pt-[51px] swiper-wrapper">
+            <div class="swiper px-10 partnerSwiper">
+               <div class="swiper-wrapper  lg:px-0 w-full pt-[51px]">
                   <div class="swiper-slide">
                      <div class="assosiate-card w-full flex flex-col lg:flex-row">
                         <img src="./assets/person.png" style="width: 294px;
-                           height: 355px;
-                           flex-shrink: 0;" alt="">
+                           height: 355px" alt="">
                         <div class="flex flex-col gap-[34px]">
                            <span class="flex flex-col gap-[18px]">
                               <h2 style="color: #FFF;
@@ -500,7 +499,7 @@
                                  font-size: 30px;
                                  font-style: normal;
                                  font-weight: 400;
-                                 line-height: 89.6%; /* 26.88px */">Warner John</h2>
+                                 line-height: 89.6%;">Warner John</h2>
                               <h3 style="color: #FFF;
                                  leading-trim: both;
                                  text-edge: cap;
@@ -516,15 +515,15 @@
                               font-size: 16px;
                               font-style: normal;
                               font-weight: 600;
-                              line-height: 141.4%; /* 22.624px */">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u</p>
+                              line-height: 141.4%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u</p>
                         </div>
                      </div>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide w-full lg:w-[60%]">
                      <div class="assosiate-card flex-col xl:flex-row">
                         <img src="./assets/person.png" style="width: 294px;
                            height: 355px;
-                           flex-shrink: 0;" alt="">
+                           " alt="">
                         <div class="flex flex-col gap-[34px]">
                            <span class="flex flex-col gap-[18px]">
                               <h2 style="color: #FFF;
@@ -534,7 +533,7 @@
                                  font-size: 30px;
                                  font-style: normal;
                                  font-weight: 400;
-                                 line-height: 89.6%; /* 26.88px */">Warner John</h2>
+                                 line-height: 89.6%; ">Warner John</h2>
                               <h3 style="color: #FFF;
                                  leading-trim: both;
                                  text-edge: cap;
@@ -550,7 +549,7 @@
                               font-size: 16px;
                               font-style: normal;
                               font-weight: 600;
-                              line-height: 141.4%; /* 22.624px */">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u</p>
+                              line-height: 141.4%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u</p>
                         </div>
                      </div>
                   </div>
@@ -558,7 +557,7 @@
                      <div class="assosiate-card flex-col xl:flex-row">
                         <img src="./assets/person.png" style="width: 294px;
                            height: 355px;
-                           flex-shrink: 0;" alt="">
+                      " alt="">
                         <div class="flex flex-col gap-[34px]">
                            <span class="flex flex-col gap-[18px]">
                               <h2 style="color: #FFF;
@@ -568,7 +567,7 @@
                                  font-size: 30px;
                                  font-style: normal;
                                  font-weight: 400;
-                                 line-height: 89.6%; /* 26.88px */">Warner John</h2>
+                                 line-height: 89.6%; ">Warner John</h2>
                               <h3 style="color: #FFF;
                                  leading-trim: both;
                                  text-edge: cap;
@@ -819,50 +818,6 @@
          </footer>
       </main>
       <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-      <script>
-         const width=window.innerWidth
-         console.log(width)
-         var slidesPerViewValue = width < 700 ? 1 : 4;
-         var slidesPerViewValueBlog = width < 700 ? 1 : 3;
-         var swiper = new Swiper(".mySwiper", {
-           slidesPerView:slidesPerViewValue,
-           spaceBetween: 30,
-           centeredSlides: true,
-           navigation: {
-             nextEl: ".swiper-button-next",
-             prevEl: ".swiper-button-prev",
-           },
-         });
-         var swiper = new Swiper(".practiceSwiper", {
-           slidesPerView: slidesPerViewValue,
-           spaceBetween: 30,
-          centeredSlides: false,
-         slidesPerGroupSkip: 1,
-           navigation: {
-             nextEl: ".swiper-button-next",
-             prevEl: ".swiper-button-prev",
-           },
-         });
-         var swiper = new Swiper(".partnerSwiper", {
-           slidesPerView: "auto",
-         centeredSlides: true,
-         spaceBetween: 30,
-           navigation: {
-             nextEl: ".swiper-button-next",
-             prevEl: ".swiper-button-prev",
-           },
-         });
-         var swiper = new Swiper(".blogSwiper", {
-           slidesPerView: slidesPerViewValueBlog,
-           spaceBetween: 30,
-          centeredSlides: false,
-         slidesPerGroupSkip: 1,
-           navigation: {
-             nextEl: ".swiper-button-next",
-             prevEl: ".swiper-button-prev",
-           },
-         });
-      </script>
       <script src="./js/script.js"></script>
    </body>
 </html>
