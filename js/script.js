@@ -3,15 +3,15 @@ function initializeSwipers() {
     console.log(width);
     
     var slidesPerViewValue = width < 700 ? 1 :width < 1024 ? 2 :width < 1440 ? 3: 4;
-    var slidesPerViewValueBlog = width < 700 ? 1 :width < 1024 ? 2 :width < 1440 ? 3: 3;
+    var slidesPerViewValueBlog = width < 700 ? 1 :width < 1024 ? 2 :3;
   
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: slidesPerViewValue,
       spaceBetween: 30,
       centeredSlides: true,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".first-button-next",
+        prevEl: ".first-button-prev",
       },
     });
   
@@ -20,8 +20,8 @@ function initializeSwipers() {
       spaceBetween: 30,
       centeredSlides: false,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".practice-button-next",
+        prevEl: ".practice-button-prev",
       },
     });
   
@@ -30,8 +30,17 @@ function initializeSwipers() {
       centeredSlides: true,
       spaceBetween: 30,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".partner-button-next",
+        prevEl: ".partner-button-prev",
+      }, initialSlide: 1,
+    });
+    var swiper5 = new Swiper(".assosiateSwiper", {
+      slidesPerView: "auto",
+      centeredSlides: true,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: ".assosiate-button-next",
+        prevEl: ".assosiate-button-prev",
       }, initialSlide: 1,
     });
   
@@ -41,8 +50,8 @@ function initializeSwipers() {
       centeredSlides: false,
       slidesPerGroupSkip: 1,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".blog-button-next",
+        prevEl: ".blog-button-prev",
       }, initialSlide: 1,
     });
   }
