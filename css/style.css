@@ -163,7 +163,6 @@ background-repeat: no-repeat;
 background-size: cover;}
 .practice-card{
   display: flex;
-width: 464px;
 padding: 33px 27px;
 flex-direction: column;
 align-items: flex-start;
