@@ -2,7 +2,7 @@ function initializeSwipers() {
     const width = window.innerWidth;
     console.log(width);
     
-    var slidesPerViewValue = width < 700 ? 1 : 4;
+    var slidesPerViewValue = width < 700 ? 1 :width < 1024 ? 2 :width < 1440 ? 3: 4;
     var slidesPerViewValueBlog = width < 700 ? 1 : 3;
   
     var swiper = new Swiper(".mySwiper", {
@@ -19,7 +19,6 @@ function initializeSwipers() {
       slidesPerView: slidesPerViewValue,
       spaceBetween: 30,
       centeredSlides: false,
-      slidesPerGroupSkip: 1,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -33,7 +32,7 @@ function initializeSwipers() {
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
-      },
+      }, initialSlide: 1,
     });
   
     var swiper4 = new Swiper(".blogSwiper", {
@@ -44,12 +43,12 @@ function initializeSwipers() {
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
-      },
+      }, initialSlide: 1,
     });
   }
   
-  // Call the function initially
+
   initializeSwipers();
   
-  // Add an event listener for window resize
+
   window.addEventListener('resize', initializeSwipers);
