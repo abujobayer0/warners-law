@@ -3,7 +3,7 @@ function initializeSwipers() {
     console.log(width);
     
     var slidesPerViewValue = width < 700 ? 1 :width < 1024 ? 2 :width < 1440 ? 3: 4;
-    var slidesPerViewValueBlog = width < 700 ? 1 : 3;
+    var slidesPerViewValueBlog = width < 700 ? 1 :width < 1024 ? 2 :width < 1440 ? 3: 3;
   
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: slidesPerViewValue,
