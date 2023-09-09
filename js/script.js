@@ -34,6 +34,7 @@ function initializeSwipers() {
         nextEl: ".partner-button-next",
         prevEl: ".partner-button-prev",
       }, initialSlide: 1,
+      loop:true
     });
     var swiper5 = new Swiper(".assosiateSwiper", {
       slidesPerView: "auto",
@@ -43,6 +44,7 @@ function initializeSwipers() {
         nextEl: ".assosiate-button-next",
         prevEl: ".assosiate-button-prev",
       }, initialSlide: 1,
+      loop:true
     });
   
     var swiper4 = new Swiper(".blogSwiper", {

@@ -14,13 +14,13 @@
    <body>
       <main class="relative overflow-hidden mx-auto">
          <nav
-            class="flex w-full pb-[30px] lg:pb-[45px] items-center border-b-2 border-[#FFFFFF1F] absolute top-[30px] lg:top-[45px] z-10 px-10 justify-between"
+            class="hidden xl:flex w-full pb-[30px] lg:pb-[45px] items-center border-b-2 border-[#FFFFFF1F] absolute top-[30px] lg:top-[45px] z-10 px-10 justify-between"
             >
             <div class="flex w-full gap-[31px] items-center">
                <div>
                   <img src="./assets/logo.png" class="w-full" alt="" />
                </div>
-               <ul class="hidden lg:flex gap-[31px]">
+               <ul class="hidden xl:flex w-full gap-[31px]">
                   <li>Home</li>
                   <li>Practice Arenas</li>
                   <li>Client Portfolio</li>
@@ -29,14 +29,16 @@
                   <li>Career</li>
                </ul>
             </div>
-            <div class="w-full pl-5 flex justify-end items-center">
+
+            
+            <div class="w-fit cursor-pointer  flex justify-end items-center">
                <div
-                  class="flex items-center justify-end bg-[#FFFFFF17] rounded px-[21px] w-[200px] md:w-[300px] xl:w-[360px] gap-2 h-[44px] lg:h-[56px] gap-2"
+                  class="flex items-center justify-end bg-[#FFFFFF17] rounded px-[21px] w-fit md:w-[300px] xl:w-[360px] gap-2 h-[44px] lg:h-[56px] gap-2"
                   >
                   <input
                      type="text"
                      placeholder="How can we help?"
-                     class="bg-transparent w-full outline-none"
+                     class="bg-transparent hidden md:flex w-full outline-none"
                      />
                   <svg
                      width="18"
@@ -54,8 +56,44 @@
                      </g>
                   </svg>
                </div>
+              
             </div>
          </nav>
+       <div class="w-full" style="position: relative;">
+
+          <section class="top-nav xl:hidden flex w-full py-[45px] lg:pb-[45px] items-center border-b-2 border-[#FFFFFF1F]  z-10 px-10 justify-between" >
+             <div>
+                <img src="./assets/logo.png" class="w-full" alt="" />
+               </div>
+               <input id="menu-toggle" type="checkbox" />
+               <label class='menu-button-container' for="menu-toggle">
+                  <div class='menu-button'></div>
+                  <svg
+                  width="18"
+                  height="19"
+                  viewBox="0 0 18 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  >
+                  <g id="ion:search">
+                     <path
+                     id="Vector"
+                     d="M17.471 16.3257L13.6091 12.4638C14.5389 11.2261 15.0408 9.71943 15.0391 8.17135C15.0391 4.21709 11.822 1 7.86776 1C3.91351 1 0.696411 4.21709 0.696411 8.17135C0.696411 12.1256 3.91351 15.3427 7.86776 15.3427C9.41584 15.3444 10.9225 14.8425 12.1602 13.9127L16.0221 17.7746C16.2176 17.9494 16.4726 18.0426 16.7347 18.0353C16.9968 18.028 17.2462 17.9206 17.4316 17.7352C17.617 17.5498 17.7244 17.3004 17.7317 17.0383C17.7391 16.7762 17.6458 16.5212 17.471 16.3257ZM2.74537 8.17135C2.74537 7.15824 3.04579 6.16788 3.60865 5.3255C4.1715 4.48313 4.97151 3.82658 5.90751 3.43888C6.8435 3.05118 7.87345 2.94973 8.86709 3.14738C9.86074 3.34503 10.7735 3.83289 11.4898 4.54927C12.2062 5.26565 12.6941 6.17838 12.8917 7.17202C13.0894 8.16567 12.9879 9.19561 12.6002 10.1316C12.2125 11.0676 11.556 11.8676 10.7136 12.4305C9.87124 12.9933 8.88088 13.2937 7.86776 13.2937C6.50972 13.2921 5.20777 12.7519 4.24748 11.7916C3.2872 10.8314 2.747 9.5294 2.74537 8.17135Z"
+                           fill="white"
+                           />
+                        </g>
+                     </svg>
+          </label>
+          <ul class="menu">
+             <li>Home</li>
+             <li>Practice Arenas</li>
+             <li>Client Portfolio</li>
+             <li>About</li>
+             <li>Contact</li>
+             <li>Career</li>
+            </ul>
+         </section>
+      </div>
          <section id="hero" class="w-full h-[750px] lg:h-[960px]">
             <div id="hero-content">
                <div class="mt-[70px] lg:mt-[200px] flex flex-col gap-[22px] lg:gap-[44px] mx-10 md:ml-[100px] xl:ml-[200px]">
