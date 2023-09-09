@@ -9,7 +9,6 @@ function initializeSwipers() {
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: slidesPerViewValue,
       spaceBetween: 30,
-      centeredSlides: true,
       navigation: {
         nextEl: ".first-button-next",
         prevEl: ".first-button-prev",
@@ -34,7 +33,7 @@ function initializeSwipers() {
         nextEl: ".partner-button-next",
         prevEl: ".partner-button-prev",
       }, initialSlide: 1,
-      loop:true
+
     });
     var swiper5 = new Swiper(".assosiateSwiper", {
       slidesPerView: "auto",
@@ -44,7 +43,7 @@ function initializeSwipers() {
         nextEl: ".assosiate-button-next",
         prevEl: ".assosiate-button-prev",
       }, initialSlide: 1,
-      loop:true
+    
     });
   
     var swiper4 = new Swiper(".blogSwiper", {
